@@ -5,14 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
     hoverCount = parseInt(localStorage.getItem('hoverCount')) || 0;
 });
 
-window.onload = () => {
-    const bgMusic = document.getElementById('bg-music');
-    const playMusic = () => {
-        bgMusic.play().catch(error => console.log("Audio play blocked:", error));
-    };
-    
-    playMusic();
-};
+
+
 
 function showLove() {
     const yesSound = document.getElementById('yes-sound');
@@ -81,7 +75,7 @@ function moveNoButton() {
     noSound.currentTime = 0;
     noSound.play()
 
-
+    
     hoverCount++;
     localStorage.setItem('hoverCount', hoverCount);
     if (hoverCount % 3 == 1) {
