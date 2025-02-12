@@ -59,3 +59,40 @@ h1 {
     top: 50%;
     transform: translate(-50%, -50%); 
 }
+
+/* Hover effect for the 'Enter' button */
+#enter-button {
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#enter-button:hover {
+    background-color: #e91e63;
+    transform: scale(1.1);
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+.btn.yes {
+    padding: 15px 40px;
+    font-size: 1.7rem;
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn.yes:hover {
+    background-color: #e91e63;
+    transform: scale(1.15) rotate(3deg);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+}
