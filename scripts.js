@@ -18,7 +18,7 @@ function renderWelcomePage() {
     app.innerHTML = `
         <div id="welcome-content" style="text-align: center; padding: 50px;">
             <h1 style="font-size: 2.5rem; color: #ff4081; font-family: Arial, sans-serif;">
-                Welcome to the Ultimate Valentine’s Day Question! What the fuck! 💖
+                Welcome to the Ultimate Valentine’s Day Question! What the fuck! (Volume up!) 💖
             </h1>
 
             <button id="enter-button" class="btn enter" style="margin-top: 30px;">
