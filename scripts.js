@@ -3,6 +3,11 @@ let hoverCount = 0;
 const animalImages = ["animals/cappybara1.jpeg", "animals/cat1.png", "animals/cat2.jpeg", "animals/cat3.jpeg", "animals/dog1.jpeg", "animals/dog2.jpg", "animals/dog3.jpeg","animals/racoon1.jpeg"];
 document.addEventListener("DOMContentLoaded", () => {
     hoverCount = parseInt(localStorage.getItem('hoverCount')) || 0;
+    const bgMusic = document.getElementById('bg-music');
+    if (bgMusic) {
+        bgMusic.loop = true;
+        bgMusic.play().catch(error => console.log("Audio play blocked:", error));
+    }
 });
 
 
@@ -65,14 +70,20 @@ function showLove() {
 }
 
 function moveNoButton() {
+
+    const noSound = document.getElementById('no-sound');
+
+    if (noSound) {
+        noSound.currentTime = 0;
+        noSound.play().catch(error => console.log("Audio play blocked:", error));
+    }
+
     const noButton = document.querySelector('.no');
     const x = Math.random() * (window.innerWidth - 100);
     const y = Math.random() * (window.innerHeight - 100);
     noButton.style.left = `${x}px`;
     noButton.style.top = `${y}px`;
-    const noSound = document.getElementById('no-sound');
-    noSound.currentTime = 0;
-    noSound.play()
+    
 
     
     hoverCount++;
