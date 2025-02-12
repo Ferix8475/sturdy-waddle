@@ -71,7 +71,6 @@ function moveNoButton() {
     noButton.style.left = `${x}px`;
     noButton.style.top = `${y}px`;
     const noSound = document.getElementById('no-sound');
-    noSound.load(); 
     noSound.currentTime = 0;
     noSound.play()
 
